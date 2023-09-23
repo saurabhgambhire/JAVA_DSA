@@ -3,6 +3,9 @@ package Sorting;
 import java.util.Arrays;
 
 public class CyclicSort {
+
+    // Space Complexity --> O(1) --> Constant
+    // Time Complexity --> O(n)
     public static void main(String[] args) {
         int[] arr = {5,4,3,2,1};
         cyclicSort(arr);
