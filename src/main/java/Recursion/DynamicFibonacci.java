@@ -7,6 +7,7 @@ public class DynamicFibonacci {
 
     }
 
+    // Dynamic Programming - to avoid duplicate function calling
     static long fibonacci(int n) {
         if (n < 2) return n;
         long[] fibo = new long[n];
