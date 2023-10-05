@@ -18,7 +18,6 @@ public class RecursiveBubbleSort {
                 arr[col] = arr[col + 1];
                 arr[col + 1] = temp;
             }
-
             bubbleSort(arr, row, col + 1);
         } else
             bubbleSort(arr, row - 1, 0);
