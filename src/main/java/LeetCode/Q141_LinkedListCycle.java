@@ -18,4 +18,5 @@ public class Q141_LinkedListCycle {
         }
         return false;
     }
+
 }
