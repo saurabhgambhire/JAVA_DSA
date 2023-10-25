@@ -8,12 +8,13 @@ public class Q143_ReorderList{
     }
 
     public void reorderList(ListNode head) {
-        if(head.next == null || head == null)
-        return;
+
+        if(head == null || head.next == null)
+         return;
 
         ListNode firstHead = head;
-        ListNode mid = mid(head);
-        ListNode secondHead = reversListNode(mid);
+        ListNode mid = middleNode(head);
+        ListNode secondHead = reverseList(mid);
 
         while (firstHead != null && secondHead != null) {
             ListNode temp = firstHead.next;
@@ -25,42 +26,39 @@ public class Q143_ReorderList{
             secondHead = temp;
         }
 
-        if (firstHead.next != null) {
-            firstHead.next = null;
-        }
+        if (firstHead!=null) firstHead.next = null;
+
     }
 
-    public ListNode mid(ListNode head){
-        
+    public ListNode middleNode(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
 
-        while(fast != null && fast.next != null)
-        {
+        while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
         }
         return slow;
     }
 
-    public ListNode reversListNode(ListNode head){
+    public ListNode reverseList(ListNode head) {
+
         if(head == null)
-        return head;
+            return head;
 
         ListNode prev = null;
         ListNode present = head;
-        ListNode next = present.next;
+        ListNode nx = present.next;
 
-        while(prev != null)
+        while( present != null )
         {
             present.next = prev;
             prev = present;
-            present = next;
-            if(next !=null){
-                next = next.next;
+            present = nx;
+            if(nx != null){
+                nx = nx.next;
             }
         }
-
         return prev;
     }
     
