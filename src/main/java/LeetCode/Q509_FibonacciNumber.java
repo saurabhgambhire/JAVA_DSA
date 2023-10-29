@@ -3,6 +3,7 @@ package LeetCode;
 public class Q509_FibonacciNumber {
     public static void main(String[] args) {
         System.out.println(fib(10));
+        System.out.println("Hello");
     }
 
     static public int fib(int n) {
