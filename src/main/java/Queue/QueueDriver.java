@@ -8,9 +8,7 @@ public class QueueDriver {
         }
 
         queue.display();
-
         queue.remove();
-
         queue.display();
 
     }
