@@ -6,7 +6,6 @@ public class QueueDriver {
         for (int i = 0; i < 10; i++) {
             queue.insert(i);
         }
-
         queue.display();
         queue.remove();
         queue.display();
