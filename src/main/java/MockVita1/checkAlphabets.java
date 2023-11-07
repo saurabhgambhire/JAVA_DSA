@@ -1,6 +1,7 @@
 package MockVita1;
 
 import java.util.*;
+
 public class checkAlphabets {
     public static void main(String[] args) {
         String str = "abcdefghijaklmnopqrstuvwxy";
@@ -9,15 +10,15 @@ public class checkAlphabets {
         for (char ch = 'a'; ch <= 'z'; ch++) {
             alphabets.add(ch);
         }
-        for (char ch : str.toCharArray()){
+        for (char ch : str.toCharArray()) {
             if (alphabets.contains(ch)) {
                 alphabets.remove(ch);
             }
         }
 
-        if (alphabets.isEmpty()){
+        if (alphabets.isEmpty()) {
             System.out.println("true");
-        }else {
+        } else {
             System.out.println("false");
         }
     }
