@@ -44,6 +44,7 @@ public class BackTracking {
     }
 
     static void backTrackingPathPrint(String p, boolean[][] board, int r, int c, int[][] path, int step) {
+
         if (r == board.length - 1 && c == board[0].length - 1) {
             path[r][c] = step;
             for (int[] ints : path) {
