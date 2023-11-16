@@ -17,6 +17,7 @@ public class BackTracking {
     }
 
     static void backTracking(String p, boolean[][] board, int r, int c) {
+
         if (r == board.length - 1 && c == board[0].length - 1) {
             System.out.println(p);
             return;
