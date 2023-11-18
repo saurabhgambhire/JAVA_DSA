@@ -9,6 +9,7 @@ public class BackTracking {
                 {true, true, true},
                 {true, true, true}
         };
+
         int[][] path = new int[board.length][board[0].length];
 //        backTracking("", board, 0, 0);
         backTrackingPathPrint("", board, 0, 0, path, 1);
