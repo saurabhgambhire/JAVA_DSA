@@ -32,7 +32,6 @@ public class CustomQueue {
     public int remove() throws Exception {
         if (isEmpty())
             throw new Exception("Queue is empty");
-
         int remove = data[0];
         // shifting the elements
         for (int i = 0; i < end; i++) {
