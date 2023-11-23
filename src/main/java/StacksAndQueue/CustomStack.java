@@ -1,4 +1,4 @@
-package Stacks;
+package StacksAndQueue;
 
 public class CustomStack {
     public static void main(String[] args) throws StackException {

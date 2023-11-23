@@ -1,4 +1,4 @@
-package Queue;
+package StacksAndQueue;
 
 public class CustomQueue {
     private int[] data;

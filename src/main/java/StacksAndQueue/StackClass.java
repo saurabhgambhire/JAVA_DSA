@@ -1,4 +1,4 @@
-package Stacks;
+package StacksAndQueue;
 
 public class StackClass {
     protected int[] data;
