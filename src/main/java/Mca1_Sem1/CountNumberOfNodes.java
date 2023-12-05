@@ -21,9 +21,7 @@ public class CountNumberOfNodes {
 class SLL {
     Node head;
 
-    public SLL() {
-    }
-
+    public SLL() {}
 
     public void print() {
         Node node = head;
