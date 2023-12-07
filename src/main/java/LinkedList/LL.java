@@ -13,6 +13,14 @@ public class LL {
         head = node;
     }
 
+    public void display() {
+        Node node = head;
+        while (node.next != null) {
+            System.out.println(node.val);
+            node = node.next;
+        }
+    }
+
 
 }
 
