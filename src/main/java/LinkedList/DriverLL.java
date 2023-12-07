@@ -9,5 +9,6 @@ public class DriverLL {
         ll.insert(30);
         ll.insert(40);
 
+        ll.display();
     }
 }
