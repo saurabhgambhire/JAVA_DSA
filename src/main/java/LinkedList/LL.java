@@ -9,6 +9,12 @@ public class LL {
 
     public void insert(int val) {
         Node node = new Node(val);
+        if (head == null) {
+            node.next = null;
+            head = node;
+            tail = node;
+            return;
+        }
         node.next = head;
         head = node;
     }
