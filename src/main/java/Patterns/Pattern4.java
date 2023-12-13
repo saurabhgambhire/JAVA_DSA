@@ -14,7 +14,7 @@ public class Pattern4 {
             for (int col = 0; col < 5 - row - 1; col++) {
                 System.out.print("-" + " ");
             }
-            for (int col = 0; col <= row; col++) {
+            for (int col = 0; col < row*2-1; col++) {
                 System.out.print("*" + " ");
             }
             System.out.println();
